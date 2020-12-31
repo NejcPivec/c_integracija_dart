@@ -1,0 +1,3 @@
+E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/android/.cxx/cmake/debug/x86_64/CMakeFiles/QrLib.dir
+E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/android/.cxx/cmake/debug/x86_64/CMakeFiles/edit_cache.dir
+E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/android/.cxx/cmake/debug/x86_64/CMakeFiles/rebuild_cache.dir

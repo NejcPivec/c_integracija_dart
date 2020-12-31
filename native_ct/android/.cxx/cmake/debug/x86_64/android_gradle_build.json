@@ -1,0 +1,65 @@
+
+{
+	"buildFiles" : 
+	[
+		"E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/android/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"C:\\Users\\nejcp\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cmake\\debug\\x86_64 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"QrLib-Debug-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "QrLib",
+			"buildCommand" : "C:\\Users\\nejcp\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cmake\\debug\\x86_64 --target QrLib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/nejcp/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/nejcp/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DQrLib_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/qr_codeData.cpp",
+					"workingDirectory" : "E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/android/.cxx/cmake/debug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/nejcp/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/nejcp/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DQrLib_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/QrLib.cpp",
+					"workingDirectory" : "E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/android/.cxx/cmake/debug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/nejcp/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/nejcp/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DQrLib_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/QRMeasurementParserUtils.cpp",
+					"workingDirectory" : "E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/android/.cxx/cmake/debug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/nejcp/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/nejcp/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DQrLib_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/QRutilities.cpp",
+					"workingDirectory" : "E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/android/.cxx/cmake/debug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/nejcp/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/nejcp/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DQrLib_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/structureTagsDefs.cpp",
+					"workingDirectory" : "E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/android/.cxx/cmake/debug/x86_64"
+				}
+			],
+			"output" : "E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/build/native_ct/intermediates/cmake/debug/obj/x86_64/libQrLib.so",
+			"toolchain" : "1710051985"
+		}
+	},
+	"toolchains" : 
+	{
+		"1710051985" : 
+		{
+			"cCompilerExecutable" : "C:/Users/nejcp/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/nejcp/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

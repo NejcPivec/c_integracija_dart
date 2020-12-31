@@ -1,0 +1,8 @@
+Executable : C:\Users\nejcp\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\cmake.exe
+arguments : 
+--build
+E:\Flutter\FlutterApps\Metrel_Prava\qr_integracija\native_ct\android\.cxx\cmake\debug\x86_64
+--target
+QrLib
+jvmArgs : 
+

@@ -1,0 +1,70 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\android",
+      "sdkFolder": "C:\\Users\\nejcp\\AppData\\Local\\Android\\Sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\build\\native_ct\\intermediates",
+      "gradleModulePathName": ":native_ct",
+      "moduleRootFolder": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android",
+      "makeFile": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\android\\.cxx",
+      "cxxFolder": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx",
+      "ndkFolder": "C:\\Users\\nejcp\\AppData\\Local\\Android\\Sdk\\ndk\\21.3.6528147",
+      "ndkVersion": "21.3.6528147",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "soFolder": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\build\\native_ct\\intermediates\\cmake\\debug\\lib",
+    "objFolder": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\build\\native_ct\\intermediates\\cmake\\debug\\obj",
+    "jsonFolder": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cmake\\debug",
+    "gradleBuildOutputFolder": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cxx\\debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARM64_V8A",
+  "abiPlatformVersion": 16,
+  "cxxBuildFolder": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cmake\\debug\\arm64-v8a",
+  "jsonFile": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cmake\\debug\\arm64-v8a\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cxx\\debug\\arm64-v8a",
+  "objFolder": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\build\\native_ct\\intermediates\\cmake\\debug\\obj\\arm64-v8a",
+  "buildCommandFile": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cmake\\debug\\arm64-v8a\\build_command.txt",
+  "buildOutputFile": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cmake\\debug\\arm64-v8a\\build_output.txt",
+  "modelOutputFile": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cmake\\debug\\arm64-v8a\\build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cxx\\debug\\arm64-v8a\\CMakeLists.txt",
+    "toolchainWrapperFile": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cxx\\debug\\arm64-v8a\\android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cxx\\debug\\arm64-v8a\\build_generation_state.json",
+    "cacheKeyFile": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cxx\\debug\\arm64-v8a\\compiler_cache_key.json",
+    "compilerCacheUseFile": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cxx\\debug\\arm64-v8a\\compiler_cache_use.json",
+    "compilerCacheWriteFile": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cxx\\debug\\arm64-v8a\\compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cxx\\debug\\arm64-v8a\\compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cmake\\debug\\arm64-v8a\\json_generation_record.json",
+  "compileCommandsJsonFile": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cmake\\debug\\arm64-v8a\\compile_commands.json"
+}

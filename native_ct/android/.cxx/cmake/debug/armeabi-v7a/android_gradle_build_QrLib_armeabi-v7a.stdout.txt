@@ -1,0 +1,2 @@
+[1/2] Building CXX object CMakeFiles/QrLib.dir/E_/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/QrLib.cpp.o
+[2/2] Linking CXX shared library E:\Flutter\FlutterApps\Metrel_Prava\qr_integracija\build\native_ct\intermediates\cmake\debug\obj\armeabi-v7a\libQrLib.so

@@ -1,0 +1,14 @@
+Executable : C:\Users\nejcp\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\cmake.exe
+arguments : 
+-HE:\Flutter\FlutterApps\Metrel_Prava\qr_integracija\native_ct\android
+-BE:\Flutter\FlutterApps\Metrel_Prava\qr_integracija\native_ct\android\.cxx\cmake\debug\armeabi-v7a
+-DANDROID_ABI=armeabi-v7a
+-DANDROID_PLATFORM=android-16
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=E:\Flutter\FlutterApps\Metrel_Prava\qr_integracija\build\native_ct\intermediates\cmake\debug\obj\armeabi-v7a
+-DCMAKE_BUILD_TYPE=Debug
+-DANDROID_NDK=C:\Users\nejcp\AppData\Local\Android\Sdk\ndk\21.3.6528147
+-DCMAKE_TOOLCHAIN_FILE=C:\Users\nejcp\AppData\Local\Android\Sdk\ndk\21.3.6528147\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=C:\Users\nejcp\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe
+-GAndroid Gradle - Ninja
+jvmArgs : 
+

@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\nejcp\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cmake\\debug\\armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "QrLib-Debug-armeabi-v7a": {
+      "artifactName": "QrLib",
+      "buildCommand": "C:\\Users\\nejcp\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\native_ct\\android\\.cxx\\cmake\\debug\\armeabi-v7a --target QrLib",
+      "abi": "armeabi-v7a",
+      "output": "E:\\Flutter\\FlutterApps\\Metrel_Prava\\qr_integracija\\build\\native_ct\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\\libQrLib.so"
+    }
+  }
+}

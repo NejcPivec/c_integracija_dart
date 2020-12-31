@@ -1,0 +1,21 @@
+# ninja log v5
+1	260	0	CMakeFiles/QrLib.dir/E_/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/structureTagsDefs.cpp.o	56b03d9a68393a38
+7	331	0	CMakeFiles/QrLib.dir/E_/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/qr_codeData.cpp.o	4a2af0dd2a54f498
+12	772	0	CMakeFiles/QrLib.dir/E_/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/QrLib.cpp.o	c2333be848edc697
+10	1105	0	CMakeFiles/QrLib.dir/E_/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/QRutilities.cpp.o	ea2b7d3c720b11ac
+5	1302	0	CMakeFiles/QrLib.dir/E_/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/QRMeasurementParserUtils.cpp.o	16d440a86356efd
+1303	1632	0	E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/build/native_ct/intermediates/cmake/debug/obj/x86_64/libQrLib.so	65d73f5fa99e05b
+4	548	0	CMakeFiles/QrLib.dir/E_/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/QrLib.cpp.o	c2333be848edc697
+548	1008	0	E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/build/native_ct/intermediates/cmake/debug/obj/x86_64/libQrLib.so	65d73f5fa99e05b
+4	577	0	CMakeFiles/QrLib.dir/E_/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/QrLib.cpp.o	c2333be848edc697
+577	1211	0	E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/build/native_ct/intermediates/cmake/debug/obj/x86_64/libQrLib.so	65d73f5fa99e05b
+3	1188	0	CMakeFiles/QrLib.dir/E_/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/QrLib.cpp.o	c2333be848edc697
+1188	1755	0	E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/build/native_ct/intermediates/cmake/debug/obj/x86_64/libQrLib.so	65d73f5fa99e05b
+3	1238	0	CMakeFiles/QrLib.dir/E_/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/QrLib.cpp.o	c2333be848edc697
+1238	1774	0	E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/build/native_ct/intermediates/cmake/debug/obj/x86_64/libQrLib.so	65d73f5fa99e05b
+3	576	0	CMakeFiles/QrLib.dir/E_/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/QrLib.cpp.o	c2333be848edc697
+576	1072	0	E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/build/native_ct/intermediates/cmake/debug/obj/x86_64/libQrLib.so	65d73f5fa99e05b
+3	531	0	CMakeFiles/QrLib.dir/E_/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/QrLib.cpp.o	c2333be848edc697
+531	979	0	E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/build/native_ct/intermediates/cmake/debug/obj/x86_64/libQrLib.so	65d73f5fa99e05b
+2	543	0	CMakeFiles/QrLib.dir/E_/Flutter/FlutterApps/Metrel_Prava/qr_integracija/native_ct/ios/Classes/QrLib.cpp.o	c2333be848edc697
+543	1104	0	E:/Flutter/FlutterApps/Metrel_Prava/qr_integracija/build/native_ct/intermediates/cmake/debug/obj/x86_64/libQrLib.so	65d73f5fa99e05b
