@@ -1,6 +1,10 @@
+import 'dart:convert';
+
 import 'package:ffi/ffi.dart';
 import 'package:flutter/material.dart';
 import 'package:qr_integracija/qr.dart';
+
+import 'package:tree_view/tree_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,69 +34,152 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+    var ids = [];
+    var contents = [];
+
+    var inputs = [
+      'F22:1:3:0.00%M:0.00%M:9.00%M:9.00%M:9.00%M:9.00%M+3Y31',
+      'F20:1:1:\$3E199.9M:525+246Z/F23:1:0.001%M:0::3.50%M:+A1/I3:1+CSA'
+    ];
+
+    inputs.forEach((input) {
+      var result = Utf8.fromUtf8(hello(Utf8.toUtf8(input), 12));
+      var decodedResult = json.decode(result);
+      ids.add(decodedResult['DDid']);
+      contents.add(decodedResult['content']);
+    });
+
+/* Drevesna struktura */
+    var treeView = TreeView(
+      parentList: [
+        Parent(
+          parent: ExpansionTile(
+            leading: Icon(Icons.apps),
+            title: Text('QR decoded results'),
+            children: [
+              ChildList(
+                children: <Widget>[
+                  for (var i = 0; i < ids.length; i++)
+                    Parent(
+                      parent: Padding(
+                        padding: const EdgeInsets.only(left: 20.0),
+                        child: Card(
+                          child: ExpansionTile(
+                            leading: Icon(Icons.class_),
+                            title: Text('Measurement id ${ids[i]}'),
+                            children: [
+                              ChildList(
+                                children: <Widget>[
+                                  for (var content in contents[i])
+                                    Measurement(
+                                      icon: Icon(Icons.done),
+                                      parameter: '${content['type']}',
+                                      measurement: '${content['value']}',
+                                    ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+
     return Scaffold(
       appBar: AppBar(
         title: Text('C integracija'),
       ),
-      body: Center(
-        child: Column(
-          children: [
-            Row(children: [
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: FlatButton(
-                    onPressed: () {
-                      print('Gumb 1');
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        'DECODE MEASUREMENTS',
-                        style: TextStyle(
-                          fontSize: 15.0,
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    color: Colors.blue,
-                    textColor: Colors.white,
-                  ),
-                ),
+      body: Column(
+        children: [
+          Row(
+            children: [
+              MainButton(
+                title: 'DECODE MEASUREMENTS',
+                onPressed: () {
+                  print('DECODE MEASUREMENTS');
+                },
               ),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: FlatButton(
-                    onPressed: () {
-                      print('Gumb 2');
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        'TEST NATIVE CALLBACK',
-                        style: TextStyle(
-                          fontSize: 15.0,
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    color: Colors.blue,
-                    textColor: Colors.white,
-                  ),
-                ),
+              MainButton(
+                title: 'TEST NATIVE CALLBACK',
+                onPressed: () {
+                  print('TEST NATIVE CALLBACK');
+                },
               ),
-            ]),
-            Text(
-              Utf8.fromUtf8(
-                hello(
-                    Utf8.toUtf8(
-                        'F22:1:3:0.00%M:0.00%M:9.00%M:9.00%M:9.00%M:9.00%M+3Y31'),
-                    12),
+            ],
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          Expanded(
+            child: Container(
+              height: MediaQuery.of(context).size.height,
+              child: treeView,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/* Gumb */
+class MainButton extends StatelessWidget {
+  final String title;
+  final Function onPressed;
+
+  const MainButton({Key key, this.title, this.onPressed}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: FlatButton(
+          onPressed: onPressed,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              title,
+              style: TextStyle(
+                fontSize: 15.0,
               ),
-            )
-          ],
+              textAlign: TextAlign.center,
+            ),
+          ),
+          color: Colors.blue,
+          textColor: Colors.white,
         ),
+      ),
+    );
+  }
+}
+
+/* Narejena kartica za posamezne meritve */
+class Measurement extends StatelessWidget {
+  final Icon icon;
+  final String parameter;
+  final String measurement;
+
+  const Measurement({
+    Key key,
+    this.icon,
+    this.parameter,
+    this.measurement,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(left: 20.0),
+      child: ExpansionTile(
+        leading: icon,
+        title: Text('$parameter -> $measurement'),
       ),
     );
   }
