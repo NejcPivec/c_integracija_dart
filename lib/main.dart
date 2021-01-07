@@ -96,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 title: 'DECODE MEASUREMENTS',
                 onPressed: () {
                   inputs.forEach((input) {
-                    var result = Utf8.fromUtf8(hello(Utf8.toUtf8(input), 12));
+                    var result = Utf8.fromUtf8(decode(Utf8.toUtf8(input), 12));
                     var decodedResult = json.decode(result);
 
                     setState(() {
