@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:ffi/ffi.dart';
 import 'package:flutter/material.dart';
+import 'package:qr_integracija/custom_expansion_tile.dart';
 import 'package:qr_integracija/qr.dart';
 
 import 'package:tree_view/tree_view.dart';
@@ -45,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
     var treeView = TreeView(
       parentList: [
         Parent(
-          parent: ExpansionTile(
+          parent: CustomExpansionTile(
             leading: Icon(Icons.apps),
             title: Text('QR decoded results'),
             children: [
@@ -56,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       parent: Padding(
                         padding: const EdgeInsets.only(left: 20.0),
                         child: Card(
-                          child: ExpansionTile(
+                          child: CustomExpansionTile(
                             leading: Icon(Icons.class_),
                             title: Text('Measurement id ${ids[i]}'),
                             children: [
@@ -109,8 +110,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 title: 'TEST NATIVE CALLBACK',
                 onPressed: () {
                   print('TEST NATIVE CALLBACK');
-                  print(ids);
-                  print(contents);
                 },
               ),
             ],
@@ -181,7 +180,7 @@ class Measurement extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(left: 20.0),
-      child: ExpansionTile(
+      child: CustomExpansionTile(
         leading: icon,
         title: Text('$parameter -> $measurement'),
       ),
