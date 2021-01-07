@@ -32,22 +32,14 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  List ids = [];
+  List contents = [];
   @override
   Widget build(BuildContext context) {
-    var ids = [];
-    var contents = [];
-
     var inputs = [
       'F22:1:3:0.00%M:0.00%M:9.00%M:9.00%M:9.00%M:9.00%M+3Y31',
       'F20:1:1:\$3E199.9M:525+246Z/F23:1:0.001%M:0::3.50%M:+A1/I3:1+CSA'
     ];
-
-    inputs.forEach((input) {
-      var result = Utf8.fromUtf8(hello(Utf8.toUtf8(input), 12));
-      var decodedResult = json.decode(result);
-      ids.add(decodedResult['DDid']);
-      contents.add(decodedResult['content']);
-    });
 
 /* Drevesna struktura */
     var treeView = TreeView(
@@ -102,13 +94,23 @@ class _MyHomePageState extends State<MyHomePage> {
               MainButton(
                 title: 'DECODE MEASUREMENTS',
                 onPressed: () {
-                  print('DECODE MEASUREMENTS');
+                  inputs.forEach((input) {
+                    var result = Utf8.fromUtf8(hello(Utf8.toUtf8(input), 12));
+                    var decodedResult = json.decode(result);
+
+                    setState(() {
+                      ids.add(decodedResult['DDid']);
+                      contents.add(decodedResult['content']);
+                    });
+                  });
                 },
               ),
               MainButton(
                 title: 'TEST NATIVE CALLBACK',
                 onPressed: () {
                   print('TEST NATIVE CALLBACK');
+                  print(ids);
+                  print(contents);
                 },
               ),
             ],
@@ -116,12 +118,14 @@ class _MyHomePageState extends State<MyHomePage> {
           Divider(
             color: Colors.black,
           ),
-          Expanded(
-            child: Container(
-              height: MediaQuery.of(context).size.height,
-              child: treeView,
-            ),
-          ),
+          ids.length == 0
+              ? Text('Nothing Yet')
+              : Expanded(
+                  child: Container(
+                    height: MediaQuery.of(context).size.height,
+                    child: treeView,
+                  ),
+                ),
         ],
       ),
     );
