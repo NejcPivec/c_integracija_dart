@@ -150,7 +150,7 @@ class MainButton extends StatelessWidget {
             child: Text(
               title,
               style: TextStyle(
-                fontSize: 15.0,
+                fontSize: 13.0,
               ),
               textAlign: TextAlign.center,
             ),
