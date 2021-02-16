@@ -35,6 +35,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   List ids = [];
   List contents = [];
+  bool pressed = false;
   @override
   Widget build(BuildContext context) {
     var inputs = [
@@ -95,21 +96,27 @@ class _MyHomePageState extends State<MyHomePage> {
               MainButton(
                 title: 'DECODE MEASUREMENTS',
                 onPressed: () {
+                  if(pressed == false)  { 
                   inputs.forEach((input) {
                     var result = Utf8.fromUtf8(decode(Utf8.toUtf8(input), 12));
                     var decodedResult = json.decode(result);
 
-                    setState(() {
-                      ids.add(decodedResult['DDid']);
-                      contents.add(decodedResult['content']);
-                    });
-                  });
+                      setState(() {
+                        pressed = true;
+                        ids.add(decodedResult['DDid']);
+                        contents.add(decodedResult['content']);
+                      });
+                   });
+                  }
                 },
               ),
               MainButton(
                 title: 'TEST NATIVE CALLBACK',
                 onPressed: () {
-                  print('TEST NATIVE CALLBACK');
+                    setState(() {
+                      ids = [];
+                      pressed = false;
+                    });
                 },
               ),
             ],
